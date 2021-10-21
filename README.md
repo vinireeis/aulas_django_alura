@@ -9,3 +9,4 @@ para ativar > .\venv\Scripts\activate
 iniciar servidor > python manage.py runserver
 iniciar um projeto > django-admin startproject nome_do_projeto
 ajuda nos comandos > django-admin help
+deactivate
