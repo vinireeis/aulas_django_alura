@@ -10,3 +10,5 @@ iniciar servidor > python manage.py runserver
 iniciar um projeto > django-admin startproject nome_do_projeto
 ajuda nos comandos > django-admin help
 deactivate
+
+https://cursos.alura.com.br/certificate/926bed94-40e0-4be5-af6e-3b19bf566440
