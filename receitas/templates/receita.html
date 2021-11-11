@@ -5,7 +5,7 @@
     <!-- Preloader -->
     <div id="preloader">
         <i class="circle-preloader"></i>
-        <img src="{% static 'img/core-img/hamburger.png' %}" alt="">
+        <img src="{% static 'img/core-img/hamburger.png' %}" alt="foto hamburuger">
     </div>
     {% include 'partials/busca.html' %}
     {% include 'partials/menu.html' %} 
@@ -38,7 +38,7 @@
                         {% if receita.foto_receita == '' %}
                         <img src="{% static 'img/bg-img/tomate_banner.jpg' %}">
                         {% else %}
-                            <img src="{{ receita.foto_receita.url}}" alt="">
+                            <img src="{{ receita.foto_receita.url}}" alt="" style="max-width: 80%; height: 70%;">
                         {% endif %}
                     </div>
                 </div>
@@ -48,39 +48,38 @@
         <!-- Receipe Content Area -->
         <div class="receipe-content-area">
             <div class="container">
-
                 <div class="row">
                     <div class="col-12 col-md-8">
                         <div class="receipe-headline my-5">
                             <span>{{ receita.data_receita}}</span>
                             <h2>{{receita.nome_receita}}</h2>
                             <div class="receipe-duration">
-                                <h6>Preparo: {{receita.tempo_preparo}}</h6>
-                                <h6>Rendimento: {{receita.rendimento}}</h6>
-                                <h6>Categoria: {{receita.categoria}}</h6>
-                                <h6>Por: {{receita.pessoa}}</h6>
+                                <b>Preparo:</b> {{receita.tempo_preparo}} horas<br>
+                                <b>Rendimento:</b> {{receita.rendimento}}<br>
+                                <b>Categoria:</b> {{receita.categoria}}<br>
+                                <b>Por:</b> {{receita.pessoa}}
                             </div>
                         </div>
                     </div>
 
                 <div class="row">
-                    <div class="col-12 col-lg-8">
+                    <div class="col-12 col-lg-7">
                         <!-- Single Preparation Step -->
+                        <h4>Modo de preparo</h4>
                         <div class="single-preparation-step d-flex">
                             <p>{{receita.modo_preparo}} </p>
                         </div>
                     </div>
 
                     <!-- Ingredientes -->
-                    <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4">
+                    <div>
+                        <h4>Ingredientes</h4>
                         <div class="ingredients">
-                            <h4>Ingredientes</h4>
-                            <div class="ingredients">
-                                <p>{{receita.ingredientes}}</p>
-                            </p>
-                            </div>
+                            <p>{{receita.ingredientes}}</p>
                         </div>
                     </div>
+                </div>
                 </div>
                 <!-- Ingredientes -->
 
