@@ -23,6 +23,5 @@ Projeto de uma aplicação web (site de receitas), utilizando Python e framework
   
 ![image](https://user-images.githubusercontent.com/80652060/141233400-f4356bb7-c9a5-4454-b058-bced5b84dc26.png)
 
-
-
-
+  
+  <h5> Obrigado por visualizar, Vinicius Reis.
